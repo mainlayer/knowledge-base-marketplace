@@ -5,7 +5,7 @@ Mainlayer is "Stripe for AI agents" — it handles metered billing for
 resource access.  Every paid RAG query is verified through a Mainlayer
 payment before results are returned.
 
-Docs: https://api.mainlayer.xyz
+Docs: https://api.mainlayer.fr
 Auth: Authorization: Bearer <MAINLAYER_API_KEY>
 """
 
@@ -22,7 +22,7 @@ from .models import MainlayerResource, PaymentVerification
 
 logger = logging.getLogger(__name__)
 
-MAINLAYER_BASE_URL = os.getenv("MAINLAYER_BASE_URL", "https://api.mainlayer.xyz")
+MAINLAYER_BASE_URL = os.getenv("MAINLAYER_BASE_URL", "https://api.mainlayer.fr")
 MAINLAYER_API_KEY = os.getenv("MAINLAYER_API_KEY", "")
 
 # Default request timeout (seconds)
